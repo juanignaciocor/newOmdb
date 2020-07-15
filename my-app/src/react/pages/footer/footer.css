@@ -1,0 +1,51 @@
+.containerFooter{
+    height: 148px;
+    width: 100%;
+    background: #1C1A02;
+    border-top: 1px white solid;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logoImage{
+    height: 120px;
+}
+.logo{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.webSocial{
+    width: 33.3%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+   
+}
+
+.contact{
+    height: 100%;
+    width: 33.3%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contact>p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 43.5%;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+

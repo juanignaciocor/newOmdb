@@ -1,0 +1,15 @@
+.NavbarColor{
+    background-color: #802C;
+}
+
+.linkContainer{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 60px;
+    width: 200px;
+
+}
+.linkContainer>a{
+    text-decoration:none;
+    color:white
+}
