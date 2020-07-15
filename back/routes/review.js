@@ -7,7 +7,7 @@ router.get("/commentsMovie/:movieId", review.findAllMovie) //postea comentario d
 router.get("/commentsPage", review.findAllPage)//postea comentario de la pagina
 router.post("/movie", user.isUser, review.movie)
 router.post("/page", user.isUser, review.page)
-
+//asdkjhaskjd
 
 
 
