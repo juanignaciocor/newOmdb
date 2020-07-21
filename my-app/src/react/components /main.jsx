@@ -20,6 +20,7 @@ class Main extends React.Component {
 
     }
     componentDidMount() {
+        this.props.logCookie()
     }
     render() {
         return (

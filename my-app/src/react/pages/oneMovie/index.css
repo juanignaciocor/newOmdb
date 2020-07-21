@@ -1,9 +1,9 @@
 .comments{
     display:flex;
-    
+    border-bottom: 1px solid #456;
+    height: 240px;    
 }
 .comments>p{
-    height: 200px;
     width: 50%;
 }
 .containerMovie{
@@ -111,3 +111,99 @@
 
 
       }
+      .leftProfile{
+        width: 50%;
+      }
+      .containerImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .profileImage{
+        height: 150px;
+    border-radius: 54px;
+    width: 100px;
+      }
+      .containerMore{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          
+      }
+      .more{
+        color:#C28C2E;
+        cursor: pointer;
+        padding-top: 24px;
+      }
+      
+      .review{    width: 50%;
+        border-left: 1px solid #456;
+        height: 100%;
+    }
+    .review > p{
+        font-size: 18px;
+        width: 92%;
+        margin-left: 24px;
+        color: #9ab;
+        font-weight: bold;
+        }
+      .containerReviews{
+          margin-top: 60px;
+      }
+      .section-heading{
+          padding-left: 24px;
+          font-weight: 400;
+          font-size: 1rem;
+          color:#9ab;
+          text-transform: uppercase;
+          letter-spacing: .075em;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #456;
+          
+      }
+      .reviewBy{
+          color:#C28C2E;
+          font-size: 18px;
+          text-align: center;
+      }
+      .name{
+          color: #abc;
+          font-weight: bold;
+
+      }
+      .postReview{
+          height: 260px;
+      }
+
+
+      .form__group {
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 50%;
+        margin: 0 auto
+      }
+      
+      .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #9b9b9b;
+        outline: 0;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 7px 0;
+        background: transparent;
+      
+              }
+      
+      .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        font-size: 1rem;
+        color: #9b9b9b;
+      }
+      
+      

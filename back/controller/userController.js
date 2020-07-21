@@ -2,7 +2,6 @@ const User = require('../models/user');
 const UserController = {}
 const nodemailer = require("nodemailer")
 const sendMail = function () {
-    const nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -70,6 +69,7 @@ UserController.logIn = (req, res) => {
     }
 }
 UserController.verificateLogin = (req, res, next) => {
+    console.log(req.user)
     if (req.isAuthenticated()) {
         res.json({
             email: req.user.email,

@@ -3,8 +3,9 @@ const Schema = mongoose.Schema
 const bcrypt = require('bcryptjs')
 const ReviewSchema = mongoose.Schema({
     userId: { type: Schema.Types.ObjectId, ref: "user" },
-    comments: { type: Array, required: true, default: [] },
-    public: { type: String, default: "page" }
+    comments: { type: String, required: true, default: "" },
+    public: { type: String, default: "page" },
+    likes: { type: Number, default: 0 }
 })
 
 

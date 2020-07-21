@@ -1,14 +1,15 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import StarIcon from '@material-ui/icons/Star';
 
 import "./index.css"
 export default ({ topMovies }) => {
     return (
         <div className="container">
             <div >
-                <div>
-                    <p className="bienvenido">Bienvenido a la OMDB !!<br></br>
-                     Aqui encontrara un catalogo de peliculas y series puntuadas por distintos usuarios.Tambien podra agregar amigos,calificar, comentar dichas peliculas/series  </p>
+                <div className="gradiente">
+                    <img src="https://i.imgur.com/OdMte8m.jpg" className="imagengradiente gradiente"></img>
                 </div>
                 <h2 className="title focus-in-expand-fwd">Box Office Movies</h2>
                 <div className="imgGrid">
@@ -20,7 +21,14 @@ export default ({ topMovies }) => {
 
                                 </div>
                                 <div className="containerText">
-                                    <p>Raiting: 8</p>
+                                    <div className="iconPossLeft">
+                                        <VisibilityIcon className="visibilityIcon"></VisibilityIcon>
+                                        <span className="iconText">{elemento.count}</span>
+                                    </div>
+                                    <div className="iconPossRight">
+                                        <StarIcon className="starIcon"></StarIcon>
+                                        <span className="iconText">{elemento.movie[0].imdbRating}</span>
+                                    </div>
                                 </div>
                             </div>
                         )

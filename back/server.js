@@ -19,7 +19,7 @@ mongoose.connect("mongodb://localhost/omdb",
 
 
 )
-app.use(cors({ origin: true }));
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(express.static(__dirname + "/public"))
 app.use(bodyParser.urlencoded({
     extended: false

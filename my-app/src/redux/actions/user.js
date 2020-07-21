@@ -10,7 +10,7 @@ export const logued = (logged) => ({
 
 //Loguear usuario
 export const loguear = (user) => dispatch => {
-    return axios.post(`http://localhost:8080/api/user/logued`, user)
+    return axios.post(`http://localhost:8080/api/user/logued`, user, { withCredentials: true })
         .then((res) => dispatch(logued(res.data)))
 }
 //Desloguear usuario
@@ -20,7 +20,7 @@ export const desloguear = () => dispatch => {
 }
 //Persistencia de usuario
 export const logCookie = () => dispatch => {
-    return axios.get("http://localhost:8080/api/user/checkCookie")
+    return axios.get("http://localhost:8080/api/user/checkCookie", { withCredentials: true })
         .then((res) => {
             console.log(res.data)
             dispatch(logued(res.data))
