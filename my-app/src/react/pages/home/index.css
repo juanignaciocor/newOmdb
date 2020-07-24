@@ -29,14 +29,15 @@
 
 }
 .textIcon{
-        color: #fff;
     font-size: 14px;
+    color:black;
+    font-weight: bold;
 }
 .visibilityIcon{
-        color:lightgray
+        color:black
 }
 .starIcon{
-        color:rgba(136, 0, 34, 0.8);}
+        color:#C28C2E}
 .title{
     font-size: 42px;
     margin-left: 42px;
@@ -45,12 +46,39 @@
     width: 600px;
     
 }
+.section-next{
+        margin-top: 62px;
+        padding-left: 24px;
+        font-weight: 400;
+        font-size: 2rem;
+        color:#9ab;
+        text-transform: uppercase;
+        letter-spacing: .075em;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #456;
+}
+.section-mostpopular{
+                padding-left: 24px;
+                font-weight: 400;
+                font-size: 2rem;
+                color:#9ab;
+                text-transform: uppercase;
+                letter-spacing: .075em;
+              padding-bottom: 5px;
+              border-bottom: 1px solid #456;
+                
+}
 .gradiente{
+        height: 100%;
+        width: 100%;
         background-image: linear-gradient(90deg,#14181d 0,rgba(20,24,29,.98556487) .97%,rgba(20,24,29,.9451312) 2.07833333%,rgba(20,24,29,.88300656) 3.29666667%,rgba(20,24,29,.80349854) 4.60166667%,rgba(20,24,29,.71091472) 5.96666667%,rgba(20,24,29,.60956268) 7.365%,rgba(20,24,29,.50375) 8.77166667%,rgba(20,24,29,.39778426) 10.16%,rgba(20,24,29,.29597303) 11.505%,rgba(20,24,29,.20262391) 12.78%,rgba(20,24,29,.12204446) 13.95833333%,rgba(20,24,29,.05854227) 15.01666667%,rgba(20,24,29,.01642493) 15.92833333%,rgba(20,24,29,0) 16.66666667%,rgba(20,24,29,0) 83.33333333%,rgba(20,24,29,.01642493) 84.07166667%,rgba(20,24,29,.05854227) 84.98333333%,rgba(20,24,29,.12204446) 86.04166667%,rgba(20,24,29,.20262391) 87.22%,rgba(20,24,29,.29597303) 88.495%,rgba(20,24,29,.39778426) 89.84%,rgba(20,24,29,.50375) 91.22833333%,rgba(20,24,29,.60956268) 92.635%,rgba(20,24,29,.71091472) 94.03333333%,rgba(20,24,29,.80349854) 95.39833333%,rgba(20,24,29,.88300656) 96.70333333%,rgba(20,24,29,.9451312) 97.92166667%,rgba(20,24,29,.98556487) 99.03%,#14181d),linear-gradient(0deg,#14181d 0,#14181d 21.48148148%,rgba(20,24,29,.98556487) 23.63703704%,rgba(20,24,29,.9451312) 26.1%,rgba(20,24,29,.88300656) 28.80740741%,rgba(20,24,29,.80349854) 31.70740741%,rgba(20,24,29,.71091472) 34.74074074%,rgba(20,24,29,.60956268) 37.84814815%,rgba(20,24,29,.50375) 40.97407407%,rgba(20,24,29,.39778426) 44.05925926%,rgba(20,24,29,.29597303) 
         47.04814815%,rgba(20,24,29,.20262391) 49.88148148%,rgba(20,24,29,.12204446) 52.5%,rgba(20,24,29,.05854227) 54.85185185%,rgba(20,24,29,.01642493) 56.87777778%,rgba(20,24,29,0) 58.51851852%);
 }
-.imagengradiente{margin-left: 110px;
-        margin-top: 32px;}
+.imagengradiente{    height: 1020px;
+        margin-left: 8px;
+        background-image: url("https://image.tmdb.org/t/p/original//kY0h95L73t7a6ev6Rv0aHSCtN7y.jpg")}
+
+
 .containerCart{
         height: 360px;
         width: 212px;
@@ -61,7 +89,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #C28C2E;
+        background-color: #fff;
 }
 .containerImage{
         display: flex;
@@ -175,4 +203,61 @@
               transform: translateX(-8px) translateY(8px);
     }
   }
+  
+
+
+
+
+
+  .gradienteHeader{
+        display: flex;
+        align-items: center;
+       background-image:linear-gradient(180deg,#14181c 0,rgba(20,24,28,.94460641) 16.56%,rgba(20,24,28,.80174927) 30.85%,rgba(20,24,28,.60641399) 43.77%,rgba(20,24,28,.39358601) 56.23%,rgba(20,24,28,.19825073) 69.15%,rgba(20,24,28,.05539359) 83.44%,rgba(20,24,28,0));
+}
+.navbarSection{
+        width: 50%;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarSection>a{
+        text-decoration: none;
+        color:#fff;
+        font-family:  'Roboto', sans-serif;
+        letter-spacing: 0.48em;
+        
+}
+  .headerSection{
+        height: 72px;
+        position: relative;
+        z-index: 1;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+
+  .headerLogo{
+        display: flex;
+        align-items: center;
+
+justify-content: center;
+        width: 25%;
+}
+.headerLogo>img{
+        height: 72px;
+       }
+
+  .headerFormulario{
+         
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+  }
+
+
+
+
   

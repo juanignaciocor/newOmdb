@@ -15,7 +15,7 @@ export const loguear = (user) => dispatch => {
 }
 //Desloguear usuario
 export const desloguear = () => dispatch => {
-    return axios.get('http://localhost:8080/api/user/logout')
+    return axios.get('http://localhost:8080/api/user/logout', { withCredentials: true })
         .then(() => dispatch(logued({})))
 }
 //Persistencia de usuario

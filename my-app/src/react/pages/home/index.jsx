@@ -2,16 +2,18 @@ import React from "react"
 import { Link } from "react-router-dom"
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import StarIcon from '@material-ui/icons/Star';
+import Review from "../reviews/reviews"
+import Carrousel from "../../assets/components/carrousel"
 
 import "./index.css"
-export default ({ topMovies }) => {
+export default ({ topMovies, commentInput, morePagination, postComment, reviews, comment }) => {
     return (
         <div className="container">
             <div >
-                <div className="gradiente">
-                    <img src="https://i.imgur.com/OdMte8m.jpg" className="imagengradiente gradiente"></img>
+                <div className="imagengradiente" >
+                    <div className="gradiente"></div>
                 </div>
-                <h2 className="title focus-in-expand-fwd">Box Office Movies</h2>
+                <h2 className="section-mostpopular">MOST POPULAR</h2>
                 <div className="imgGrid">
                     {topMovies.length >= 1 ? (topMovies.map((elemento) => {
                         return (
@@ -23,11 +25,11 @@ export default ({ topMovies }) => {
                                 <div className="containerText">
                                     <div className="iconPossLeft">
                                         <VisibilityIcon className="visibilityIcon"></VisibilityIcon>
-                                        <span className="iconText">{elemento.count}</span>
+                                        <span className="textIcon">{elemento.count}</span>
                                     </div>
                                     <div className="iconPossRight">
                                         <StarIcon className="starIcon"></StarIcon>
-                                        <span className="iconText">{elemento.movie[0].imdbRating}</span>
+                                        <span className="textIcon">{elemento.movie[0].imdbRating}</span>
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +37,15 @@ export default ({ topMovies }) => {
                     })) : (null)}
 
                 </div>
-
+                <h2 className="section-next">
+                    next releases</h2>
+                <Carrousel></Carrousel>
+                <Review morePagination={morePagination}
+                    commentInput={commentInput}
+                    comment={comment}
+                    postComment={postComment}
+                    reviews={reviews}
+                    title={"Page reviews"} />
 
 
             </div>

@@ -89,6 +89,7 @@ export default function SignInSide({ handlerChange, password, username, fetchUse
                             placeholder="Username"
                             onChange={(e) => handlerChange(e)}
                             value={username}
+                            className="input-loguer"
                         />
                         <TextField
                             variant="outlined"
@@ -102,6 +103,8 @@ export default function SignInSide({ handlerChange, password, username, fetchUse
                             placeholder="email"
                             onChange={(e) => handlerChange(e)}
                             value={password}
+                            className="input-loguer"
+
                         />
                         <FormControlLabel
                             control={<Checkbox value="remember" color="primary" />}
@@ -133,6 +136,6 @@ export default function SignInSide({ handlerChange, password, username, fetchUse
                     </form>
                 </div>
             </Grid>
-        </Grid>
+        </Grid >
     );
 }

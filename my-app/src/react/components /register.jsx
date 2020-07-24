@@ -8,6 +8,7 @@ const RegisterComponent = ({ createUser }) => {
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
     const [age, setAge] = useState("")
+    const [avatar, setAvatar] = useState("")
 
     const handlerChange = (e) => {
         if (e.target.name === "username") {
@@ -22,6 +23,9 @@ const RegisterComponent = ({ createUser }) => {
         if (e.target.name === "age") {
             setAge(e.target.value)
         }
+        if (e.target.name === "avatar") {
+            setAvatar(e.target.value)
+        }
     }
     const registerUser = (e) => {
         e.preventDefault()
@@ -35,6 +39,7 @@ const RegisterComponent = ({ createUser }) => {
             password={password}
             email={email}
             age={age}
+            avatar={avatar}
         ></Register>
     )
 }

@@ -34,9 +34,11 @@ const MovieComponent = ({ getMovie,
     useEffect(() => {
         fetchMovieReviews(movieID, page)
     }, [change])
+
     useEffect(() => {
         fetchMovieReviews(movieID, page)
     }, [page])
+
     const addToFav = (e) => {
         e.preventDefault()
         let sendUser = {

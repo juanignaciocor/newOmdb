@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SignUp({ handlerChange, registerUser, username, password, email, age }) {
+export default function SignUp({ handlerChange, registerUser, username, password, email, age, avatar }) {
     const classes = useStyles();
 
     return (
@@ -115,6 +115,19 @@ export default function SignUp({ handlerChange, registerUser, username, password
                                 onChange={(e) => handlerChange(e)}
                             />
                         </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                                variant="outlined"
+                                required
+                                fullWidth
+                                name="avatar"
+                                label="Avatar"
+                                id="avatar"
+                                value={avatar}
+                                onChange={(e) => handlerChange(e)}
+                            />
+                        </Grid>
+
                         <Grid item xs={12}>
                             <FormControlLabel
                                 control={<Checkbox value="allowExtraEmails" color="primary" />}

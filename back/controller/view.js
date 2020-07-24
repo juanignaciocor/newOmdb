@@ -24,7 +24,10 @@ ViewController.destroy = (req, res, next) => {
         .then(() => res.sendStatus(200))
 }
 ViewController.views = (req, res, next) => {
-    View.find()
-        .then((data) => res.status(200).json(data))
+    View.find().sort([["count", 'descending']])
+        .then((data) => {
+            const review = data.slice(0, 10)
+            res.status(200).json(review)
+        })
 }
 module.exports = ViewController

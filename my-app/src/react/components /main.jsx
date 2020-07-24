@@ -35,7 +35,6 @@ class Main extends React.Component {
                     <Route exact path="/logger" component={Logger}></Route>
 
                 </Switch>
-                <Route path="/" component={Footer}></Route>
 
             </React.Fragment>
         )

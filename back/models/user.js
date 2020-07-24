@@ -5,7 +5,8 @@ const UserSchema = mongoose.Schema({
     age: { type: Number, require: true },
     username: { type: String, required: true },
     password: { type: String, required: true },
-    favorites: { type: Array, default: [] }
+    favorites: { type: Array, default: [] },
+    avatar: { type: String, default: "" }
 
 })
 

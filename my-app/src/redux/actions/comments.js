@@ -33,7 +33,7 @@ export const fetchMovieReviews = (movieId, page) => dispatch => {
 export const postPageREviews = (review) => dispatch => {
     return axios.post("http://localhost:8080/api/review/page", review)
 }
-export const fetchPageReviews = () => dispatch => {
-    return axios.get(`http://localhost:8080/api/review/commentsPage`)
+export const fetchPageReviews = (page) => dispatch => {
+    return axios.get(`http://localhost:8080/api/review/commentsPage/${page}`)
         .then((res) => dispatch(pageComments(res.data)))
 }

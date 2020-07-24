@@ -37,8 +37,12 @@ reviewController.findAllMovie = (req, res, next) => {
         .catch(next)
 }
 reviewController.findAllPage = (req, res, next) => {
-    Review.find({ public: "page" })
-        .then((data) => res.status(200).json(data))
+    Review.find({ public: "page" }).sort([["_id", "descending"]])
+        .then((data) => {
+            let pagination = req.params.page * 4
+            const reviewPage = data.slice(0, pagination)
+            res.status(200).json(reviewPage)
+        })
         .catch(next)
 }
 reviewController.coments = (req, res, next) => {
